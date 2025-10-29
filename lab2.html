@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Personal Profile Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #17055e;
+        }
+        header, nav, section, article, footer {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 60%;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 15px;
+            background-color: #fa259a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #fa259a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Personal Profile</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About Me</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <article>
+            <h2>About Me</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Nur Farisha Batrisyia</td>   
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <th>Occupation</th>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <th>Favourite Color</th>
+                    <td colspan="2">Blue</td>
+                </tr>
+            </table>
+        </article>
+
+        <article>
+            <h2>User Information Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+
+                <label>Favorite Hobbies:</label>
+                <input type="checkbox" name="hobby" value="Reading"> Reading
+                <input type="checkbox" name="hobby" value="Gaming"> Gaming
+                <input type="checkbox" name="hobby" value="Traveling"> Traveling
+                
+                <label for="novel">Choose a Favourite Novel:</label><br>
+                <select id="novel" name="novel">
+                    <option value="the natural">The Natural</option>
+                    <option value="harry potter">Harry Potter</option>
+                    <option value="games untold">Games Untold</option>
+                    <option value="hunger games">Hunger Games</option>
+                </select><br>
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Personal Profile Page</p>
+    </footer>
+
+</body>
+</html>
